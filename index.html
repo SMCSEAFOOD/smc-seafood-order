@@ -3,166 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>SMC Seafood</title>
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-}
-
-body{
-background:#f3f7fb;
-}
-
-header{
-background:#003B73;
-color:white;
-padding:20px;
-text-align:center;
-font-size:28px;
-font-weight:bold;
-}
-
-.sub{
-font-size:15px;
-margin-top:5px;
-font-weight:normal;
-}
-
-.banner{
-width:100%;
-max-height:250px;
-object-fit:cover;
-}
-
-.container{
-padding:15px;
-}
-
-.card{
-
-background:white;
-border-radius:15px;
-padding:15px;
-margin-bottom:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-
-}
-
-.price{
-
-color:#0a7cff;
-font-size:22px;
-font-weight:bold;
-
-}
-
-button{
-
-background:#0a7cff;
-color:white;
-border:none;
-padding:12px;
-border-radius:10px;
-width:100%;
-font-size:16px;
-margin-top:10px;
-
-}
-
-.footer{
-
-position:fixed;
-bottom:0;
-left:0;
-right:0;
-
-background:white;
-
-padding:15px;
-
-box-shadow:0 -3px 10px rgba(0,0,0,.1);
-
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
-SMC SEAFOOD
+<div class="logo">
 
-<div class="sub">
+<h1>SMC SEAFOOD</h1>
 
-Fresh From The Sea,
-Quality For You
+<p>Fresh From The Sea, Quality For You</p>
 
 </div>
 
 </header>
 
-<img class="banner" src="banner.jpg">
+<section class="hero">
 
-<div class="container">
+<img src="banner.jpg" alt="SMC Seafood">
 
-<div class="card">
+</section>
+
+<section class="container">
+
+<div class="product">
 
 <h2>🦐 Udang Premium</h2>
 
-<p class="price">
+<p class="price">Rp90.000 / Kg</p>
 
-Rp90.000 / Kg
-
-</p>
-
-<button>
-
-Pesan Udang
-
-</button>
+<input type="number" id="udang" min="0" value="0">
 
 </div>
 
-<div class="card">
+<div class="product">
 
 <h2>🦑 Cumi Premium</h2>
 
-<p class="price">
+<p class="price">Rp90.000 / Kg</p>
 
-Rp90.000 / Kg
-
-</p>
-
-<button>
-
-Pesan Cumi
-
-</button>
+<input type="number" id="cumi" min="0" value="0">
 
 </div>
 
-</div>
+</section>
 
-<div class="footer">
+<section class="checkout">
 
-<b>Total : Rp0</b>
+<h2>Form Pemesanan</h2>
 
-<button>
+<input id="nama" type="text" placeholder="Nama Lengkap">
 
-Checkout
+<input id="hp" type="tel" placeholder="Nomor HP">
 
-</button>
+<textarea id="alamat" placeholder="Alamat Lengkap"></textarea>
 
-</div>
+<textarea id="catatan" placeholder="Catatan (Opsional)"></textarea>
+
+<button onclick="pesan()">Pesan Sekarang</button>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
