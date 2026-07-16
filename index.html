@@ -2,70 +2,207 @@
 <html lang="id">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SMC Seafood</title>
 
-<title>SMC Seafood</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<nav class="navbar">
+    <!-- ================= NAVBAR ================= -->
 
-<div class="nav-logo">
-<img src="images/1FDFFA83-05B9-4AF4-97AB-5E6B1C4BB390.png">
-<span>SMC SEAFOOD</span>
-</div>
+    <nav class="navbar">
+        <div class="container">
 
-<ul>
+            <div class="brand">
+                <img src="images/1FDFFA83-05B9-4AF4-97AB-5E6B1C4BB390.png" alt="SMC Seafood Logo">
+                <span>SMC SEAFOOD</span>
+            </div>
 
-<li><a href="#">Home</a></li>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
 
-<li><a href="#produk">Produk</a></li>
+        </div>
+    </nav>
 
-<li><a href="#cart">Keranjang</a></li>
+    <!-- ================= HERO ================= -->
 
-<li><a href="https://wa.me/628131818922">WhatsApp</a></li>
+    <header class="hero">
 
-</ul>
+        <div class="hero-content">
 
-</nav>
+            <img src="images/1FDFFA83-05B9-4AF4-97AB-5E6B1C4BB390.png"
+                 class="logo"
+                 alt="Logo SMC Seafood">
 
-<header class="hero">
+            <h1>SMC SEAFOOD</h1>
 
-<img src="images/1FDFFA83-05B9-4AF4-97AB-5E6B1C4BB390.png" class="logo">
+            <p>Fresh From The Sea, Quality For You</p>
 
-<h1>SMC SEAFOOD</h1>
+            <div class="hero-info">
 
-<p>Fresh From The Sea, Quality For You</p>
+                <div>🦐 Fresh Seafood</div>
 
-</header>
+                <div>❄️ Frozen Seafood</div>
 
-<section id="produk">
+                <div>🚚 Kirim Hari Ini</div>
+
+            </div>
+
+            <div class="hero-button">
+
+                <a href="#produk" class="btn-primary">
+                    🛒 Lihat Produk
+                </a>
+
+                <a href="https://wa.me/628131818922" class="btn-secondary">
+                    💬 Chat WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= PRODUK ================= -->
+
+    <!-- ================= STATISTIK ================= -->
+
+<section class="stats">
+
+    <div class="stats-box">
+
+        <h2>500+</h2>
+
+        <p>Pelanggan Puas</p>
+
+    </div>
+
+    <div class="stats-box">
+
+        <h2>100%</h2>
+
+        <p>Seafood Berkualitas</p>
+
+    </div>
+
+    <div class="stats-box">
+
+        <h2>Fresh</h2>
+
+        <p>Setiap Hari</p>
+
+    </div>
+
+    <div class="stats-box">
+
+        <h2>Same Day</h2>
+
+        <p>Pengiriman Cepat</p>
+
+    </div>
 
 </section>
 
-<div id="cart">
+<!-- ================= PRODUK ================= -->
 
-<h2>🛒 Keranjang</h2>
+<section id="produk"></section>
+    
 
-<div id="listCart"></div>
+    <!-- ================= KERANJANG ================= -->
 
-<h3 id="total">
-Total : Rp0
-</h3>
+    <section id="cart">
 
-<button id="checkout">
-Checkout WhatsApp
-</button>
+        <h2>🛒 Keranjang</h2>
 
-</div>
+        <div id="listCart"></div>
 
-<script src="script.js"></script>
+        <h3 id="total">Total : Rp0</h3>
+
+        <button id="checkout">
+            Checkout WhatsApp
+        </button>
+
+    </section>
+
+    <!-- ================= TENTANG ================= -->
+
+    <section id="tentang" class="about">
+
+        <h2>Mengapa Memilih SMC Seafood?</h2>
+
+        <div class="about-grid">
+
+            <div class="about-card">
+
+                <div class="icon">🐟</div>
+
+                <h3>Seafood Segar</h3>
+
+                <p>
+                    Dipilih langsung dari supplier terpercaya
+                    agar kualitas selalu terjaga.
+                </p>
+
+            </div>
+
+            <div class="about-card">
+
+                <div class="icon">❄️</div>
+
+                <h3>Fresh & Frozen</h3>
+
+                <p>
+                    Tersedia pilihan seafood segar maupun
+                    frozen sesuai kebutuhan Anda.
+                </p>
+
+            </div>
+
+            <div class="about-card">
+
+                <div class="icon">🚚</div>
+
+                <h3>Pengiriman Cepat</h3>
+
+                <p>
+                    Pesanan dikemas dengan aman dan
+                    dikirim secepat mungkin.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="kontak">
+
+        <h2>SMC SEAFOOD</h2>
+
+        <p>Fresh From The Sea, Quality For You</p>
+
+        <p>📍 Bojongsari Baru</p>
+
+        <p>📞 WhatsApp : 0813-1818-922</p>
+
+        <p>🕒 Buka Setiap Hari</p>
+
+        <p>© 2026 SMC Seafood. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 
