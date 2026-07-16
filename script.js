@@ -1,75 +1,23 @@
-const HARGA_UDANG = 90000;
-const HARGA_CUMI = 90000;
+document.getElementById("produk").innerHTML=`
 
-function formatRupiah(angka){
-    return new Intl.NumberFormat("id-ID").format(angka);
-}
+<div class="card">
 
-function pesan(){
+<img src="images/IMG_5874.jpeg">
 
-    let nama=document.getElementById("nama").value.trim();
-    let hp=document.getElementById("hp").value.trim();
-    let alamat=document.getElementById("alamat").value.trim();
-    let catatan=document.getElementById("catatan").value.trim();
+<h2>🦐 Udang Premium</h2>
 
-    let udang=parseFloat(document.getElementById("udang").value)||0;
-    let cumi=parseFloat(document.getElementById("cumi").value)||0;
+<h3>Rp90.000 / Kg</h3>
 
-    if(nama==""){
-        alert("Nama wajib diisi");
-        return;
-    }
+</div>
 
-    if(hp==""){
-        alert("Nomor HP wajib diisi");
-        return;
-    }
+<div class="card">
 
-    if(alamat==""){
-        alert("Alamat wajib diisi");
-        return;
-    }
+<img src="images/IMG_5891.jpeg">
 
-    if(udang<=0 && cumi<=0){
-        alert("Pilih minimal satu produk");
-        return;
-    }
+<h2>🦑 Cumi Premium</h2>
 
-    let totalUdang=udang*HARGA_UDANG;
-    let totalCumi=cumi*HARGA_CUMI;
+<h3>Rp90.000 / Kg</h3>
 
-    let total=totalUdang+totalCumi;
+</div>
 
-    let pesanWA=
-`Halo Admin SMC Seafood
-
-Saya ingin memesan.
-
-Nama : ${nama}
-
-HP : ${hp}
-
-Alamat :
-${alamat}
-
-==================
-
-🦐 Udang : ${udang} Kg
-
-🦑 Cumi : ${cumi} Kg
-
-==================
-
-Total :
-Rp${formatRupiah(total)}
-
-Catatan :
-${catatan}`;
-
-    let nomor="628131818922";
-
-    window.open(
-    "https://wa.me/"+nomor+"?text="+encodeURIComponent(pesanWA),
-    "_blank");
-
-}
+`;
