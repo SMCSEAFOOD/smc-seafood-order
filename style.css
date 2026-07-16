@@ -1,69 +1,105 @@
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-  background:#eef5fb;
-  color:#1b1b1b;
+    background:#eef5fb;
+    color:#222;
+    padding-bottom:120px;
 }
 
-header{
-  background:#003B73;
-  color:#fff;
-  text-align:center;
-  padding:18px;
+.header{
+    background:#003B73;
+    color:white;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
 }
 
-header h1{
-  font-size:30px;
+.header h1{
+    font-size:32px;
 }
 
-header p{
-  margin-top:6px;
+.header p{
+    margin-top:5px;
+    font-size:15px;
 }
 
-.banner{
-  width:100%;
-  display:block;
+.hero img{
+    width:100%;
+    display:block;
 }
 
 .container{
-  padding:15px;
+    padding:15px;
 }
 
-.card{
-  background:#fff;
-  border-radius:15px;
-  padding:15px;
-  margin-bottom:15px;
-  box-shadow:0 4px 12px rgba(0,0,0,.12);
+.product{
+    background:white;
+    margin-bottom:15px;
+    padding:15px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.product h2{
+    margin-bottom:10px;
 }
 
 .price{
-  color:#0077ff;
-  font-size:22px;
-  font-weight:bold;
+    color:#0066ff;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+input,textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.checkout{
+    margin:15px;
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.checkout h2{
+    margin-bottom:10px;
 }
 
 button{
-  width:100%;
-  border:none;
-  padding:12px;
-  border-radius:10px;
-  background:#0077ff;
-  color:white;
-  font-size:16px;
-  cursor:pointer;
+    width:100%;
+    margin-top:15px;
+    padding:15px;
+    background:#0077ff;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
 }
 
-.footer{
-  position:fixed;
-  bottom:0;
-  width:100%;
-  background:white;
-  padding:15px;
-  box-shadow:0 -3px 12px rgba(0,0,0,.15);
+button:hover{
+    background:#005fd1;
+}
+
+.footer-total{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background:white;
+    padding:15px;
+    box-shadow:0 -3px 10px rgba(0,0,0,.15);
 }
