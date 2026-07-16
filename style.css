@@ -20,7 +20,7 @@ body{
 
     background:
     linear-gradient(rgba(0,40,90,.45),rgba(0,40,90,.65)),
-    url("images/ocean-bg.jpg");
+    url("images/ocean-bg.png");
 
     background-size:cover;
     background-position:center;
