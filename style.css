@@ -157,17 +157,12 @@ body{
 
     overflow:hidden;
 
-    background:
-
-    linear-gradient(
-
-    rgba(0,40,90,.50),
-
-    rgba(0,40,90,.72)
-
-    ),
-
-    url("../images/ocean-bg.png");
+   background:
+linear-gradient(
+rgba(0,40,90,.50),
+rgba(0,40,90,.72)
+),
+url("images/ocean-bg.png");
 
     background-size:cover;
 
